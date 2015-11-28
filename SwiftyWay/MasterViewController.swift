@@ -47,6 +47,15 @@ class MasterViewController: UITableViewController {
     func populateTutorials(){
         let wkWebViewTutorial = TutorialModel(name: "WKWebview")
         tutorials.append(wkWebViewTutorial)
+        let alertControllerTutorial = TutorialModel(name: "UIAlertController")
+        tutorials.append(alertControllerTutorial)
+        let localNotificationTutorial = TutorialModel(name: "UILocalNotification")
+        tutorials.append(localNotificationTutorial)
+        let blurrEffectTutorial = TutorialModel(name: "Blurr Effect")
+        tutorials.append(blurrEffectTutorial)
+        let motionEffectTutorial = TutorialModel(name: "Motion Effect")
+        tutorials.append(motionEffectTutorial)
+
     }
     
     
@@ -55,6 +64,14 @@ class MasterViewController: UITableViewController {
         switch(index){
         case 0 :
             return WKWebViewExampleViewController()
+        case 1:
+            return UIAlertControllerExampleViewController()
+        case 2:
+            return UILocalNotificationExampleViewController()
+        case 3:
+            return BlurrEffectExampleViewController()
+        case 4:
+            return MotionEffectsExampleViewController()
         default:
             break
         }

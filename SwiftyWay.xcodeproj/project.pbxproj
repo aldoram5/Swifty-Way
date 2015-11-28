@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EF4E7B011BFF839D0020D051 /* hat-885402_640.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EF4E7AFF1BFF839D0020D051 /* hat-885402_640.jpg */; };
+		EF4E7B021BFF839D0020D051 /* milky-way-923801_640.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EF4E7B001BFF839D0020D051 /* milky-way-923801_640.jpg */; };
 		EF7350541BE7B7C800ABDAE9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7350531BE7B7C800ABDAE9 /* AppDelegate.swift */; };
 		EF7350561BE7B7C800ABDAE9 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7350551BE7B7C800ABDAE9 /* MasterViewController.swift */; };
 		EF7350581BE7B7C800ABDAE9 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7350571BE7B7C800ABDAE9 /* DetailViewController.swift */; };
@@ -15,9 +17,15 @@
 		EF7350601BE7B7C800ABDAE9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF73505E1BE7B7C800ABDAE9 /* LaunchScreen.storyboard */; };
 		EF73511A1BE7E90300ABDAE9 /* TutorialModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7351191BE7E90300ABDAE9 /* TutorialModel.swift */; };
 		EF7351201BE7F04600ABDAE9 /* WKWebViewExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF73511F1BE7F04600ABDAE9 /* WKWebViewExampleViewController.swift */; };
+		EF7CFFF71BFB7E67009DA8F1 /* UILocalNotificationExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7CFFF61BFB7E67009DA8F1 /* UILocalNotificationExampleViewController.swift */; };
+		EF7CFFF91BFB7E89009DA8F1 /* UIAlertControllerExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7CFFF81BFB7E89009DA8F1 /* UIAlertControllerExampleViewController.swift */; };
+		EF7CFFFB1BFB7EE3009DA8F1 /* MotionEffectsExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7CFFFA1BFB7EE3009DA8F1 /* MotionEffectsExampleViewController.swift */; };
+		EF7CFFFD1BFB7F82009DA8F1 /* BlurrEffectExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7CFFFC1BFB7F82009DA8F1 /* BlurrEffectExampleViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EF4E7AFF1BFF839D0020D051 /* hat-885402_640.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "hat-885402_640.jpg"; sourceTree = "<group>"; };
+		EF4E7B001BFF839D0020D051 /* milky-way-923801_640.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "milky-way-923801_640.jpg"; sourceTree = "<group>"; };
 		EF7350501BE7B7C800ABDAE9 /* SwiftyWay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftyWay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF7350531BE7B7C800ABDAE9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EF7350551BE7B7C800ABDAE9 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
@@ -28,6 +36,10 @@
 		EF7350611BE7B7C800ABDAE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EF7351191BE7E90300ABDAE9 /* TutorialModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialModel.swift; sourceTree = "<group>"; };
 		EF73511F1BE7F04600ABDAE9 /* WKWebViewExampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WKWebViewExampleViewController.swift; path = WKWebview/WKWebViewExampleViewController.swift; sourceTree = "<group>"; };
+		EF7CFFF61BFB7E67009DA8F1 /* UILocalNotificationExampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UILocalNotificationExampleViewController.swift; sourceTree = "<group>"; };
+		EF7CFFF81BFB7E89009DA8F1 /* UIAlertControllerExampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIAlertControllerExampleViewController.swift; sourceTree = "<group>"; };
+		EF7CFFFA1BFB7EE3009DA8F1 /* MotionEffectsExampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MotionEffectsExampleViewController.swift; sourceTree = "<group>"; };
+		EF7CFFFC1BFB7F82009DA8F1 /* BlurrEffectExampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlurrEffectExampleViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +53,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EF4E7AFE1BFF839D0020D051 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				EF4E7AFF1BFF839D0020D051 /* hat-885402_640.jpg */,
+				EF4E7B001BFF839D0020D051 /* milky-way-923801_640.jpg */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
 		EF7350471BE7B7C800ABDAE9 = {
 			isa = PBXGroup;
 			children = (
@@ -60,6 +81,11 @@
 		EF7350521BE7B7C800ABDAE9 /* SwiftyWay */ = {
 			isa = PBXGroup;
 			children = (
+				EF4E7AFE1BFF839D0020D051 /* images */,
+				EF7CFFF21BFB7E13009DA8F1 /* Alert */,
+				EF7CFFF31BFB7E13009DA8F1 /* EffectView */,
+				EF7CFFF41BFB7E13009DA8F1 /* LocalNotification */,
+				EF7CFFF51BFB7E13009DA8F1 /* MotionEffect */,
 				EF7351221BE7F05F00ABDAE9 /* WKWebView */,
 				EF7350531BE7B7C800ABDAE9 /* AppDelegate.swift */,
 				EF7350551BE7B7C800ABDAE9 /* MasterViewController.swift */,
@@ -79,6 +105,38 @@
 				EF73511F1BE7F04600ABDAE9 /* WKWebViewExampleViewController.swift */,
 			);
 			name = WKWebView;
+			sourceTree = "<group>";
+		};
+		EF7CFFF21BFB7E13009DA8F1 /* Alert */ = {
+			isa = PBXGroup;
+			children = (
+				EF7CFFF81BFB7E89009DA8F1 /* UIAlertControllerExampleViewController.swift */,
+			);
+			path = Alert;
+			sourceTree = "<group>";
+		};
+		EF7CFFF31BFB7E13009DA8F1 /* EffectView */ = {
+			isa = PBXGroup;
+			children = (
+				EF7CFFFC1BFB7F82009DA8F1 /* BlurrEffectExampleViewController.swift */,
+			);
+			path = EffectView;
+			sourceTree = "<group>";
+		};
+		EF7CFFF41BFB7E13009DA8F1 /* LocalNotification */ = {
+			isa = PBXGroup;
+			children = (
+				EF7CFFF61BFB7E67009DA8F1 /* UILocalNotificationExampleViewController.swift */,
+			);
+			path = LocalNotification;
+			sourceTree = "<group>";
+		};
+		EF7CFFF51BFB7E13009DA8F1 /* MotionEffect */ = {
+			isa = PBXGroup;
+			children = (
+				EF7CFFFA1BFB7EE3009DA8F1 /* MotionEffectsExampleViewController.swift */,
+			);
+			path = MotionEffect;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,8 +198,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF7350601BE7B7C800ABDAE9 /* LaunchScreen.storyboard in Resources */,
+				EF4E7B021BFF839D0020D051 /* milky-way-923801_640.jpg in Resources */,
 				EF73505D1BE7B7C800ABDAE9 /* Assets.xcassets in Resources */,
 				EF73505B1BE7B7C800ABDAE9 /* Main.storyboard in Resources */,
+				EF4E7B011BFF839D0020D051 /* hat-885402_640.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,11 +212,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF7CFFFD1BFB7F82009DA8F1 /* BlurrEffectExampleViewController.swift in Sources */,
 				EF7350581BE7B7C800ABDAE9 /* DetailViewController.swift in Sources */,
 				EF7350561BE7B7C800ABDAE9 /* MasterViewController.swift in Sources */,
+				EF7CFFF71BFB7E67009DA8F1 /* UILocalNotificationExampleViewController.swift in Sources */,
 				EF7350541BE7B7C800ABDAE9 /* AppDelegate.swift in Sources */,
+				EF7CFFFB1BFB7EE3009DA8F1 /* MotionEffectsExampleViewController.swift in Sources */,
 				EF7351201BE7F04600ABDAE9 /* WKWebViewExampleViewController.swift in Sources */,
 				EF73511A1BE7E90300ABDAE9 /* TutorialModel.swift in Sources */,
+				EF7CFFF91BFB7E89009DA8F1 /* UIAlertControllerExampleViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
