@@ -72,16 +72,7 @@ class WKWebViewExampleViewController:  UIViewController, WKNavigationDelegate{
     
     
     // MARK: - WK Navigation Delegate
-    
-    func webViewDidStartLoad(webView: UIWebView) {
-        print("WebView Started loading")
-    }
-    
-    func webView(webView: UIWebView, didFailLoadWithError error: NSError) {
-        
-        print("WebView Failed")
-    }
-    
+
     func webView(webView: WKWebView, didFinishNavigation navigation: WKNavigation!) {
         if(!webView.loading){
             hideMaskView()
