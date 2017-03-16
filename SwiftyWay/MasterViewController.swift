@@ -55,6 +55,8 @@ class MasterViewController: UITableViewController {
         tutorials.append(blurrEffectTutorial)
         let motionEffectTutorial = TutorialModel(name: "Motion Effect")
         tutorials.append(motionEffectTutorial)
+        let socialSharingTutorial = TutorialModel(name: "Social")
+        tutorials.append(socialSharingTutorial)
 
     }
     
@@ -72,6 +74,8 @@ class MasterViewController: UITableViewController {
             return BlurrEffectExampleViewController()
         case 4:
             return MotionEffectsExampleViewController()
+        case 5:
+            return CommonSharingExampleViewController()
         default:
             break
         }

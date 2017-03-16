@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6DDBB4401E7A5C99007ADCCB /* CommonSharingExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DDBB43F1E7A5C99007ADCCB /* CommonSharingExampleViewController.swift */; };
 		EF4E7B011BFF839D0020D051 /* hat-885402_640.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EF4E7AFF1BFF839D0020D051 /* hat-885402_640.jpg */; };
 		EF4E7B021BFF839D0020D051 /* milky-way-923801_640.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EF4E7B001BFF839D0020D051 /* milky-way-923801_640.jpg */; };
 		EF7350541BE7B7C800ABDAE9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7350531BE7B7C800ABDAE9 /* AppDelegate.swift */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6DDBB43F1E7A5C99007ADCCB /* CommonSharingExampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonSharingExampleViewController.swift; sourceTree = "<group>"; };
 		EF4E7AFF1BFF839D0020D051 /* hat-885402_640.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "hat-885402_640.jpg"; sourceTree = "<group>"; };
 		EF4E7B001BFF839D0020D051 /* milky-way-923801_640.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "milky-way-923801_640.jpg"; sourceTree = "<group>"; };
 		EF7350501BE7B7C800ABDAE9 /* SwiftyWay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftyWay.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -53,6 +55,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6DDBB43E1E7A5C99007ADCCB /* Social */ = {
+			isa = PBXGroup;
+			children = (
+				6DDBB43F1E7A5C99007ADCCB /* CommonSharingExampleViewController.swift */,
+			);
+			path = Social;
+			sourceTree = "<group>";
+		};
 		EF4E7AFE1BFF839D0020D051 /* images */ = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +91,7 @@
 		EF7350521BE7B7C800ABDAE9 /* SwiftyWay */ = {
 			isa = PBXGroup;
 			children = (
+				6DDBB43E1E7A5C99007ADCCB /* Social */,
 				EF4E7AFE1BFF839D0020D051 /* images */,
 				EF7CFFF21BFB7E13009DA8F1 /* Alert */,
 				EF7CFFF31BFB7E13009DA8F1 /* EffectView */,
@@ -214,6 +225,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6DDBB4401E7A5C99007ADCCB /* CommonSharingExampleViewController.swift in Sources */,
 				EF7CFFFD1BFB7F82009DA8F1 /* BlurrEffectExampleViewController.swift in Sources */,
 				EF7350581BE7B7C800ABDAE9 /* DetailViewController.swift in Sources */,
 				EF7350561BE7B7C800ABDAE9 /* MasterViewController.swift in Sources */,
