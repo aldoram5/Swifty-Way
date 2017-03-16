@@ -19,27 +19,27 @@ class UIAlertControllerExampleViewController: UIViewController {
     func addSimpleButtonToCenter(){
 
         let centeredButton: UIButton = UIButton()
-        centeredButton.frame = CGRectMake(UIScreen.mainScreen().bounds.width / 2 - 75,UIScreen.mainScreen().bounds.height / 2 - 25,150,50)
-        centeredButton.backgroundColor = UIColor.orangeColor()
+        centeredButton.frame = CGRect(x: UIScreen.main.bounds.width / 2 - 75,y: UIScreen.main.bounds.height / 2 - 25,width: 150,height: 50)
+        centeredButton.backgroundColor = UIColor.orange
         centeredButton.layer.masksToBounds = true
-        centeredButton.setTitle("Press Me!", forState: UIControlState.Normal)
-        centeredButton.setTitleColor(UIColor.whiteColor(), forState: UIControlState.Normal)
+        centeredButton.setTitle("Press Me!", for: UIControlState())
+        centeredButton.setTitleColor(UIColor.white, for: UIControlState())
         centeredButton.layer.cornerRadius = 10.0
-        centeredButton.addTarget(self, action: "showAlert:", forControlEvents: .TouchUpInside)
+        centeredButton.addTarget(self, action: #selector(UIAlertControllerExampleViewController.showAlert(_:)), for: .touchUpInside)
         
         self.view.addSubview(centeredButton)
     }
-    func showAlert(sender: UIButton){
+    func showAlert(_ sender: UIButton){
         
-        let alert: UIAlertController = UIAlertController(title: "Message", message: "Why do you obey a button, Alice?", preferredStyle: .Alert)
+        let alert: UIAlertController = UIAlertController(title: "Message", message: "Why do you obey a button, Alice?", preferredStyle: .alert)
         
-        let someAction = UIAlertAction(title: "OK", style: .Default) { action in
+        let someAction = UIAlertAction(title: "OK", style: .default) { action in
             print("Some Action Occurred")
         }
         
         alert.addAction(someAction)
         
-        presentViewController(alert, animated: true, completion: nil)
+        present(alert, animated: true, completion: nil)
     }
 
     override func didReceiveMemoryWarning() {

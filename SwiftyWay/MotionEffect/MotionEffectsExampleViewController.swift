@@ -15,13 +15,13 @@ class MotionEffectsExampleViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         addSimpleImageView()
-        view.backgroundColor = UIColor.blackColor()
+        view.backgroundColor = UIColor.black
         addMotionEffectToImageView()
     }
 
     
     func addSimpleImageView(){
-        photoView = UIImageView(frame: CGRectMake(40,40,200,160))
+        photoView = UIImageView(frame: CGRect(x: 40,y: 40,width: 200,height: 160))
         
         let myImage = UIImage(named: "milky-way-923801_640.jpg")
         
@@ -37,13 +37,13 @@ class MotionEffectsExampleViewController: UIViewController {
         
         // Set Vertical effect
         let verticalMotionEffect = UIInterpolatingMotionEffect(keyPath: "center.y",
-            type: .TiltAlongVerticalAxis)
+            type: .tiltAlongVerticalAxis)
         verticalMotionEffect.minimumRelativeValue = -constantValue
         verticalMotionEffect.maximumRelativeValue = constantValue
         
         // Set horizontal effect
         let horizontalMotionEffect = UIInterpolatingMotionEffect(keyPath: "center.x",
-            type: .TiltAlongHorizontalAxis)
+            type: .tiltAlongHorizontalAxis)
         horizontalMotionEffect.minimumRelativeValue = -constantValue
         horizontalMotionEffect.maximumRelativeValue = constantValue
         
@@ -51,7 +51,7 @@ class MotionEffectsExampleViewController: UIViewController {
         let group = UIMotionEffectGroup()
         group.motionEffects = [horizontalMotionEffect, verticalMotionEffect]
         photoView.addMotionEffect(group)
-        photoView.contentMode = UIViewContentMode.Center
+        photoView.contentMode = UIViewContentMode.center
     
     }
     

@@ -18,21 +18,21 @@ class UILocalNotificationExampleViewController: UIViewController {
     
     func registerForLocalNotifications(){
         
-        let setting = UIUserNotificationSettings(forTypes: [.Sound, .Alert], categories: nil)
-        UIApplication.sharedApplication().registerUserNotificationSettings(setting)
+        let setting = UIUserNotificationSettings(types: [.sound, .alert], categories: nil)
+        UIApplication.shared.registerUserNotificationSettings(setting)
         
     }
     
     func addSimpleButtonToCenter(){
         
         let centeredButton: UIButton = UIButton()
-        centeredButton.frame = CGRectMake(UIScreen.mainScreen().bounds.width / 2 - 75,UIScreen.mainScreen().bounds.height / 2 - 25,150,50)
-        centeredButton.backgroundColor = UIColor.blueColor()
+        centeredButton.frame = CGRect(x: UIScreen.main.bounds.width / 2 - 75,y: UIScreen.main.bounds.height / 2 - 25,width: 150,height: 50)
+        centeredButton.backgroundColor = UIColor.blue
         centeredButton.layer.masksToBounds = true
-        centeredButton.setTitle("Press Me!!", forState: UIControlState.Normal)
-        centeredButton.setTitleColor(UIColor.whiteColor(), forState: UIControlState.Normal)
+        centeredButton.setTitle("Press Me!!", for: UIControlState())
+        centeredButton.setTitleColor(UIColor.white, for: UIControlState())
         centeredButton.layer.cornerRadius = 10.0
-        centeredButton.addTarget(self, action: "scheduleNotifications", forControlEvents: .TouchUpInside)
+        centeredButton.addTarget(self, action: #selector(UILocalNotificationExampleViewController.scheduleNotifications), for: .touchUpInside)
         
         self.view.addSubview(centeredButton)
     }
@@ -42,10 +42,10 @@ class UILocalNotificationExampleViewController: UIViewController {
         
         scheduledNotification.alertBody = "Hi! I am the notification body "
         //scheduledNotification.soundName = "yourShortSound.wav"
-        scheduledNotification.timeZone = NSTimeZone.defaultTimeZone()
-        scheduledNotification.fireDate = NSDate(timeIntervalSinceNow: 6)
+        scheduledNotification.timeZone = TimeZone.current
+        scheduledNotification.fireDate = Date(timeIntervalSinceNow: 6)
         
-        UIApplication.sharedApplication().scheduleLocalNotification(scheduledNotification)
+        UIApplication.shared.scheduleLocalNotification(scheduledNotification)
     }
     
 

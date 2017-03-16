@@ -20,7 +20,7 @@ class BlurrEffectExampleViewController: UIViewController {
     }
     
     func addSimpleImageView(){
-        photoView = UIImageView(frame: CGRectMake(40,40,160,120))
+        photoView = UIImageView(frame: CGRect(x: 40,y: 40,width: 160,height: 120))
         
         let myImage = UIImage(named: "hat-885402_640.jpg")
         
@@ -35,13 +35,13 @@ class BlurrEffectExampleViewController: UIViewController {
     func addSimpleButtonToCenter(){
         
         let centeredButton: UIButton = UIButton()
-        centeredButton.frame = CGRectMake(UIScreen.mainScreen().bounds.width / 2 - 75,UIScreen.mainScreen().bounds.height / 2 - 25,150,50)
-        centeredButton.backgroundColor = UIColor.redColor()
+        centeredButton.frame = CGRect(x: UIScreen.main.bounds.width / 2 - 75,y: UIScreen.main.bounds.height / 2 - 25,width: 150,height: 50)
+        centeredButton.backgroundColor = UIColor.red
         centeredButton.layer.masksToBounds = true
-        centeredButton.setTitle("Blurr the Image!", forState: UIControlState.Normal)
-        centeredButton.setTitleColor(UIColor.whiteColor(), forState: UIControlState.Normal)
+        centeredButton.setTitle("Blurr the Image!", for: UIControlState())
+        centeredButton.setTitleColor(UIColor.white, for: UIControlState())
         centeredButton.layer.cornerRadius = 10.0
-        centeredButton.addTarget(self, action: "addBlurrEffectViewToImage", forControlEvents: .TouchUpInside)
+        centeredButton.addTarget(self, action: #selector(BlurrEffectExampleViewController.addBlurrEffectViewToImage), for: .touchUpInside)
         
         self.view.addSubview(centeredButton)
     }
@@ -49,7 +49,7 @@ class BlurrEffectExampleViewController: UIViewController {
     func addBlurrEffectViewToImage(){
 
         var effectV: UIVisualEffectView!
-        let blurEffect: UIVisualEffect = UIBlurEffect(style: UIBlurEffectStyle.Light)
+        let blurEffect: UIVisualEffect = UIBlurEffect(style: UIBlurEffectStyle.light)
         effectV = UIVisualEffectView(effect: blurEffect)
         effectV.frame = photoView.frame
         effectV.layer.masksToBounds = true

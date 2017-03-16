@@ -32,7 +32,7 @@ class WKWebViewExampleViewController:  UIViewController, WKNavigationDelegate{
     }
     
     func loadDestinationUrl(){
-        webView.loadRequest(NSURLRequest(URL: NSURL(string: destinationUrl)!, cachePolicy: NSURLRequestCachePolicy.UseProtocolCachePolicy, timeoutInterval:100.0))
+        webView.load(URLRequest(url: URL(string: destinationUrl)!, cachePolicy: NSURLRequest.CachePolicy.useProtocolCachePolicy, timeoutInterval:100.0))
 
     }
     
@@ -40,25 +40,25 @@ class WKWebViewExampleViewController:  UIViewController, WKNavigationDelegate{
         maskView = UIView(frame: CGRect(x: 0, y: 0, width: view.frame.width + 10, height: view.frame.height + 10 ))
         if let mask = maskView{
             mask.backgroundColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.7)
-            let activityIndicator = UIActivityIndicatorView(activityIndicatorStyle: UIActivityIndicatorViewStyle.WhiteLarge)
+            let activityIndicator = UIActivityIndicatorView(activityIndicatorStyle: UIActivityIndicatorViewStyle.whiteLarge)
             activityIndicator.center = mask.center
             activityIndicator.startAnimating()
             mask.addSubview(activityIndicator)
             view.addSubview(mask)
-            view.bringSubviewToFront(mask)
+            view.bringSubview(toFront: mask)
         }
         
     }
     
     func hideMaskView(){
         if let mask = maskView{
-            mask.hidden = true
+            mask.isHidden = true
         }
     }
     
     func showMaskView(){
         if let mask = maskView{
-            mask.hidden = false
+            mask.isHidden = false
         }
 
     }
@@ -67,14 +67,14 @@ class WKWebViewExampleViewController:  UIViewController, WKNavigationDelegate{
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        NSURLCache.sharedURLCache().removeAllCachedResponses()
+        URLCache.shared.removeAllCachedResponses()
     }
     
     
     // MARK: - WK Navigation Delegate
 
-    func webView(webView: WKWebView, didFinishNavigation navigation: WKNavigation!) {
-        if(!webView.loading){
+    func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
+        if(!webView.isLoading){
             hideMaskView()
         }
     }

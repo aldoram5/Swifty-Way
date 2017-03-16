@@ -27,9 +27,9 @@ class DetailViewController: UIViewController {
                 self.addChildViewController(detail.destination)
                 title = detail.name
                 //detail.destination.view.frame = CGRect(x: 0, y: 0, width: UIScreen.mainScreen().bounds.width, height: UIScreen.mainScreen().bounds.height)
-                detail.destination.view.frame = CGRectMake(0, 0, container.frame.size.width, container.frame.size.height);
+                detail.destination.view.frame = CGRect(x: 0, y: 0, width: container.frame.size.width, height: container.frame.size.height);
                 container.addSubview(detail.destination.view)
-                detail.destination.didMoveToParentViewController(self)
+                detail.destination.didMove(toParentViewController: self)
                 detail.destination.view.setNeedsLayout()
                 
             }
